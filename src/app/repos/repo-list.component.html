@@ -1,0 +1,101 @@
+<div class="wrapper strechHeight">
+
+<!-- Header: Github Logo -->
+<header id="home">
+		<!-- Nav -->
+		<nav id="nav" class="navbar nav-transparent fixed-nav">
+			<div class="container">
+
+				<div class="navbar-header">
+					<!-- Logo -->
+					<div class="navbar-brand">
+						<a href="index.html">
+							<img class="logo" src="assets/github-white-logo.png" alt="logo"> <span id="logoTitle">FH-SPA</span>
+						</a>
+					</div>
+					<!-- /Logo -->
+
+					<!-- Collapse nav button -->
+					<div class="nav-collapse">
+						<span></span>
+					</div>
+					<!-- /Collapse nav button -->
+				</div>
+				<!--  Main navigation  -->
+				<ul class="main-nav nav navbar-nav navbar-right">
+					<li class=""></li>
+				</ul>
+				<!-- /Main navigation -->
+			</div>
+		</nav>
+		<!-- /Nav -->
+</header>
+
+<!-- Middle text area -->
+<section id="searchId">
+        <div class="home-wrapper">
+                <div class="container">
+                    <div>
+                        <!-- home content -->
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="home-content">
+                                <h1 class="white-text" id="centered">Search For GitHub Repositories</h1>
+                                <p class="white-text" id="centered">
+                                        Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in 
+                                        laying out print, graphic or web designs. The passage is attributed 
+                                        to an unknown typesetter in the 15th century who is thought to have 
+                                        scrambled parts.
+                                </p>                            
+                            </div>
+                        </div>
+                        <!-- /home content -->
+                </div>
+            </div>
+        </div>
+</section>
+
+<!-- Search box and gallery -->
+<section id="mainBody">
+    <div id="searchGrid">
+        <div id="searchText">Search repositories by name</div>
+        <div>   
+            <div class="col-md-6 col-sm-offset-3">
+                    <div id="custom-search-input">
+                        <div class="input-group col-md-12">
+                            <input type="text" class="form-control input-lg"  [(ngModel)]='listFilter'/>
+                            <span class="input-group-btn">
+                                <button class="btn btn-info btn-lg" type="button" (click)="searchRipository()">
+                                    <i class="glyphicon glyphicon-search" ></i>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+        
+        <div>
+            <h3 id="centered" style="font-size: 20px;">Look for what people are sharing.</h3>
+        </div>        
+    </div>
+    <div>   
+        <div  class="grid-demo demo-5" >
+            <div class="card box" *ngFor='let repo of filteredRepos'>
+                <img src={{repo.avatar}} alt="John" id="avatar">
+                <h3 id="marginLR" class="nowrap white-text">{{repo.name}}</h3>
+                <p class="title">{{repo.language}}</p>
+                <p><a href={{repo.url}} target="_blank"><span id="aTag">Visit the repository</span></a></p>
+                <div style="margin: 5px 0 10px 0;">
+                  <a href="#"><i class="fa fa-dribbble"></i></a> 
+                  <a href="#"><i class="fa fa-twitter"></i></a>  
+                  <a href="#"><i class="fa fa-linkedin"></i></a>  
+                  <a href="#"><i class="fa fa-facebook"></i></a> 
+               </div>
+               <p><button>Score: {{repo.score}}</button></p>
+            </div>
+        </div>     
+    </div>
+</section>
+
+<!-- footer -->
+</div>

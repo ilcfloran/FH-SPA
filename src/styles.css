@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+.mainContainer {
+    margin: 0;
+    /* height: 100vh; */
+}
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Montserrat, 'Varela Round';
+    height: 100%;
+}
+
+.parallax {
+    background-image: url('http://www.planwallpaper.com/static/images/6909249-black-hd-background.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}

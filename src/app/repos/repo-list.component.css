@@ -1,0 +1,201 @@
+/* Index page container */
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: 10% 25% auto;
+}
+
+header {
+    display: grid;
+    grid-template-rows: 20% auto;
+}
+
+.logo {
+    max-height: 50px;
+    display: inline;
+}
+
+#logoTitle {
+    color: white;
+    margin-left: 10px;
+}
+
+#avatar{
+    height: 200px;
+    width: 250px;
+}
+
+.home-content h1 {
+  text-transform: uppercase;
+}
+
+.white-text {
+    color: #FFF;
+}
+
+.fa {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+#marginLR {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+#aTag {
+    color: salmon;
+    margin-bottom: 2px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* card items to show each repository's information */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+    max-width: 250px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    word-wrap: break-word;
+}
+
+.fa {
+    color: white;
+}
+
+.title {
+    color: #56f372;
+    font-size: 18px;
+}
+
+.nowrap {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+  
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+  
+button:hover, a:hover {
+    opacity: 0.7;
+}
+
+/* Search Box and text area */
+#searchId {
+    display: grid;
+}
+
+/* Section showing Search box and the result cards*/
+
+#mainBody {
+    display: grid;
+    grid-gap: 60px;
+    grid-template-rows: repeat(2, auto);
+}
+
+
+#searchGrid {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 10px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+#centered {
+    text-align: center;
+}
+
+.grid-demo {
+    display: grid;
+    grid-row-gap: 40px;
+    grid-column-gap: 2px;
+}
+   
+   /*creating columns*/
+.demo-5 {
+   /* grid-template-columns: repeat(4, 1fr); */
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   grid-row-gap: 40px;
+   grid-column-gap: 2px;
+}
+
+.box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display:    -moz-box;
+    display: -ms-flexbox;
+    display:         flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-right: 0;
+    padding-left: 0;
+   
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+}
+   
+#searchText{
+    text-align: center;
+    font-size: 25px;
+}
+
+/* Search Box */
+
+#custom-search-input{
+    padding: 3px;
+    border: solid 1px #E4E4E4;
+    border-radius: 6px;
+    background-color: #fff;
+    margin-top: 15px;
+}
+
+#custom-search-input input{
+    border: 0;
+    box-shadow: none;
+}
+
+#custom-search-input button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input .glyphicon-search{
+    font-size: 23px;
+}
